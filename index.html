@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <title>Recipe Book</title>
+</head>
+<body>
+    <header>  
+        <h1>Recipe Book App</h1>
+        <input type="text" id="search-bar" placeholder="Search Recipes...">
+        <button class="btn" type="button" onclick="window.location.href='feedback.html'">FeedBack</button>
+        <button class="btn" id="add-recipe-button">Add Recipe</button>
+    </div>
+        
+    </header>
+    <div class="container">
+        <ul id="recipe-list" class="recipe-lists">
+            <li class="recipe-item">
+                <img src="https://spoonacular.com/recipeImages/1111-312x231.jpg" alt="Recipe 1">
+                <h2>Recipe 1</h2>
+                <div class="recipe-item__ingredients-list">
+                    <h3><strong>Ingredients:</strong></h3>
+                    <ul class="ingredients">
+                        <li class="ingredients__ingredient">Ingredients1</li>
+                        <li class="ingredients__ingredient">Ingredients2</li>
+                        <li class="ingredients__ingredient">Ingredients3</li>
+                        <li class="ingredients__ingredient">Ingredients5</li>
+                    </ul>
+                </div>
+                <a href="#">View Recipe</a>
+            </li>
+            <li class="recipe-item">
+                <img src="https://spoonacular.com/recipeImages/22221-312x231.jpg" alt="Recipe 1">
+                <h2>Recipe 2</h2>
+                <div class="recipe-item__ingredients">
+                    <h3><strong>Ingredients:</strong></h3>
+                    <ul class="ingredients">
+                        <li class="ingredients__ingredient">Ingredients1</li>
+                        <li class="ingredients__ingredient">Ingredients2</li>
+                        <li class="ingredients__ingredient">Ingredients3</li>
+                        <li class="ingredients__ingredient">Ingredients5</li>
+                    </ul>
+                </div>
+                <a href="#">View Recipe</a>
+            </li>
+            <li class="recipe-item">
+                <img src="https://spoonacular.com/recipeImages/33333-312x231.jpg" alt="Recipe 1">
+                <h2>Recipe 3</h2>
+                <div class="recipe-item__ingredients">
+                    <h3><strong>Ingredients:</strong></h3>
+                    <ul class="ingredients">
+                        <li class="ingredients__ingredient">Ingredients1</li>
+                        <li class="ingredients__ingredient">Ingredients2</li>
+                        <li class="ingredients__ingredient">Ingredients3</li>
+                        <li class="ingredients__ingredient">Ingredients5</li>
+                    </ul>
+                </div>
+                <a href="#">View Recipe</a>
+            </li>
+        </ul>
+        <!-- Add Recipe Button -->
+<button class="btn" id="add-recipe-button">Add Recipe</button>
+
+<!-- Add Recipe Form (Initially Hidden) -->
+<div id="add-recipe-form-container" style="display: none;">
+    <form id="add-recipe-form">
+        <label for="recipe-title">Recipe Title:</label>
+        <input type="text" id="recipe-title" required>
+
+        <label for="recipe-image">Image URL:</label>
+        <input type="url" id="recipe-image" required>
+
+        <label for="recipe-ingredients">Ingredients (comma-separated):</label>
+        <textarea id="recipe-ingredients" required></textarea>
+
+        <label for="recipe-url">Recipe URL:</label>
+        <input type="url" id="recipe-url" required>
+
+        <button type="submit" class="btn">Submit Recipe</button>
+    </form>
+</div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
